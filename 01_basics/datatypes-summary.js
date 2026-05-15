@@ -1,4 +1,4 @@
-/***Two categories of datatypes based on how data is atored in memory and accessed from it:
+/***Two categories of datatypes based on how data is stored in memory and accessed from it:
   primitive and non-primitive **/
 
   //Primitive datatypes (int, float/double, char, boolean)
@@ -67,3 +67,46 @@
    console.log(typeof myFunction); //object function
 
    //Typeof variable whose value is null: object
+
+   // ******************************************************************
+
+   //Two types of memory
+
+   //Stack(Primitive), Heap(Non-Primitive)
+
+   let myName = "Nikii"; 
+
+   let anotherName = myName; 
+   anotherName = "Nikita";
+
+   console.log(myName);
+   console.log(anotherName);
+
+   /** Note for above case: 
+    * Here the data is stored in stack as primitive datatypes are used.
+    * The copy of value is sent to anotherName.
+    * Changing value in another name will not changing the value of myName.
+    */
+
+   let userOne = {
+    email: "user@google.com",
+    upi:"user@ybl"
+   }
+
+   let userTwo = userOne;
+
+   userTwo.email = "Nikita@google.com";
+
+   console.log(userOne.email);
+   console.log(userTwo.email);
+
+   /**Note for above case:
+    * Here the value {  email: "user@google.com",
+    upi:"user@ybl"} is stored in heap as objects are non-primitive datatypes.
+    * Here the reference of the value is given to both userOne and userTwo.
+    If userTwo make changes in email, it will change for userOne as well. 
+    */
+
+   
+   
+   
