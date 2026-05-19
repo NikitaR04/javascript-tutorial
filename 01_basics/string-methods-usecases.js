@@ -215,6 +215,94 @@ let title = "learn javascript fast";
 console.log(title.replaceAll(" ", "-"));
 //Output: learn-javascript-fast
 
+//7. trim() : Removes spaces from start and end
+
+//a. Form Validation
+
+let username = "    ";
+
+if(username.trim() === ""){
+    console.log("Empty input");
+    
+}
+
+//8. toLowerCase(): Convert string to lowercase
+
+//a. Case-Insensitive Search
+
+let email = "TEST@GMAIL.COM";
+
+console.log(email.toLowerCase());//test@gmail.com
+
+//9. toUpperCase(): Converts to uppercase
+
+//a. Formatting
+
+let country = "india";
+
+console.log(country.toUpperCase()); //INDIA
+
+//10. startsWith(): Checks beginning of string
+
+//a. URL Validation
+
+let url = "https://google.com";
+
+console.log(url.startsWith("https"));
+
+//b. Command Parsing
+
+let command = "/login";
+
+if(command.startsWith("/")){
+    console.log("Command detected");
+    
+}
+
+//11. endsWith(): checks ending of string
+
+//a. File Type Validation
+
+let file = "resume.pdf";
+
+if(file.endsWith(".pdf")){
+    console.log("PDF file");
+    
+}
+
+//12. repeat(): Repeats string multiple times
+
+//a. Generate Stars
+
+console.log("*".repeat(10)); 
+//Output: **********
+
+//b. Password Masking
+
+let password = "secret";
+
+console.log("*".repeat(password.length));
+
+/**In Java: string length is a method of String class (Strings are object)
+ * so in java use string.length() <- with parentheses
+ * 
+ * In Javascript, string length is a property(stores value)
+ * so in JS use string.length <- without parentheses
+ * */
+
+//13. match(): Matches text using regular expressions
+
+//a. Extract numbers:
+
+let price = "$499";
+
+console.log(price.match(/\d+/)[0]); //499
+//match returns an array ["499"], [0] is to access 0th index element.
+
+
+
+
+
 
 
 
